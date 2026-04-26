@@ -1,0 +1,43 @@
+# seed.yaml — Automation Contract for sovereign-systems--layer-above-hokage
+# Schema: seed/v1.0
+
+schema_version: '1.0'
+organ: ORGAN-III
+organ_name: Ergon
+repo: sovereign-systems--layer-above-hokage
+org: organvm-iii-ergon
+metadata:
+  implementation_status: ACTIVE
+  tier: sovereign
+  promotion_status: GRADUATED
+  last_validated: '2026-04-26'
+  description: >-
+    Layer Above Hokage research governance system. Constitutional law: "If there's no data 
+    or statistics to prove whichever answer is the best one, then it's an opportunity for 
+    studying and figuring it out. So that means all of it."
+  stack:
+    - Python 3.x
+    - Markdown
+    - JSON Schema
+telós: sovereignty_vacuum_detection
+pragma: research_evidentiary_substrate
+praxis: causal_inference_and_unit_economics
+receptio: evidence_based_coordination
+produces:
+- type: research_atlas
+  description: Three-pillar research infrastructure (Causal Inference, Unit Economics, Algorithmic Interface).
+- type: vacuum_detection
+  description: Python algorithm detecting knowledge gaps across domains.
+- type: research_sops
+  description: Standard Operating Procedures for hypothesis generation and analysis.
+consumes:
+- type: session_transcripts
+  description: Reads session exports for evidence extraction.
+- type: prompts
+  description: Consumes prompt atoms for gap detection.
+edges:
+- produces: research_atlas
+- produces: vacuum_detection
+- produces: research_sops
+- consumes: session_transcripts
+- consumes: prompts
