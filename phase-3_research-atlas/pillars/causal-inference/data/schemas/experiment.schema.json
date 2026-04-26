@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sovereign.systems/schemas/experiment.json",
+  "title": "Sovereign Experiment",
+  "description": "Schema for research experiments",
+  "type": "object",
+  "required": [
+    "study_id",
+    "title",
+    "purpose",
+    "design",
+    "metrics",
+    "pre_registration"
+  ],
+  "properties": {
+    "study_id": {
+      "type": "string",
+      "pattern": "^SOVEREIGN-20[0-9]{2}-[0-9]{3}-[A-Z]+$",
+      "examples": ["SOVEREIGN-2026-001-CAUSAL"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 200
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pre_registered",
+        "active",
+        "completed",
+        "abandoned",
+        "retired"
+      ]
+    },
+    "purpose": {
+      "type": "string",
+      "description": "One sentence on what we're testing"
+    },
+    "hypothesis": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": {"type": "string"},
+        "secondary": {"type": "array", "items": {"type": "string"}},
+        "null": {"type": "string"}
+      }
+    },
+    "design": {
+      "type": "object",
+      "required": ["type", "assignment"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "rct",
+            "iv",
+            "rdd",
+            "did",
+            "observational",
+            "single_arm"
+          ]
+        },
+        "assignment": {
+          "type": "string",
+          "enum": ["random", "quasi", "natural"]
+        },
+        "unit": {"type": "string"},
+        "arms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {"type": "string"},
+              "description": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "sample_size": {
+      "type": "object",
+      "properties": {
+        "method": {"type": "string"},
+        "effect_size": {"type": "number"},
+        "power": {"type": "number", "minimum": 0, "maximum": 1},
+        "alpha": {"type": "number", "minimum": 0, "maximum": 1},
+        "n_per_arm": {"type": "integer", "minimum": 1}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "object",
+          "required": ["name", "type"],
+          "properties": {
+            "name": {"type": "string"},
+            "type": {"type": "string", "enum": ["continuous", "count", "rate", "binary"]},
+            "direction": {"type": "string", "enum": ["higher_is_better", "lower_is_better"]},
+            "source": {"type": "string"}
+          }
+        },
+        "secondary": {
+          "type": "array",
+          "items": {"type": "object"}
+        },
+        "safety": {
+          "type": "array",
+          "items": {"type": "object"}
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "intention_to_treat": {"type": "boolean"},
+        "primary_method": {"type": "string"},
+        "covariables": {"type": "array", "items": {"type": "string"}},
+        "sensitivity": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "pre_registration": {
+      "type": "object",
+      "required": ["platform", "date"],
+      "properties": {
+        "platform": {"type": "string"},
+        "url": {"type": "string", "format": "uri"},
+        "date": {"type": "string", "format": "date"},
+        "hypothesis_locked": {"type": "boolean"},
+        "analysis_plan_locked": {"type": "boolean"}
+      }
+    },
+    "results": {
+      "type": "object",
+      "properties": {
+        "effect_size": {"type": "number"},
+        "ci_95": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "p_value": {"type": "number", "minimum": 0, "maximum": 1},
+        "n_observed": {"type": "integer"},
+        "conclusion": {"type": "string", "enum": ["confirmed", "not_confirmed", "inconclusive"]}
+      }
+    }
+  }
+}

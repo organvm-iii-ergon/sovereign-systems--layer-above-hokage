@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-04-26",
+    "total_sources": 24
+  },
+  "causal_inference": {
+    "level_1_foundations": [
+      {
+        "id": "01-pearl-2019",
+        "title": "The Book of Why",
+        "authors": ["Judea Pearl", "Dana Mackenzie"],
+        "year": 2019,
+        "publisher": "Basic Books",
+        "pages": 400,
+        "core_concept": "DAGs, do-calculus, ladder of causation",
+        "reading_time_hours": 8,
+        "status": "unread",
+        "url": "https://www.amazon.com/Book-Why-Causal-Revolution-Pearl-2019/dp/0465097607"
+      },
+      {
+        "id": "02-pearl-2019-stats",
+        "title": "Causal Inference in Statistics",
+        "authors": ["Judea Pearl", "Madelyn Glymour", "Nicholas Jewell"],
+        "year": 2019,
+        "publisher": "Wiley",
+        "pages": 450,
+        "core_concept": "Structural equations, identifiability",
+        "reading_time_hours": 12,
+        "status": "unread"
+      },
+      {
+        "id": "03-hernan-2023",
+        "title": "Introduction to Causal Inference",
+        "authors": ["Miguel Hernán", "James Robins"],
+        "year": 2023,
+        "publisher": "CRC Press (draft)",
+        "pages": 50,
+        "core_concept": "G-methods overview",
+        "reading_time_hours": 6,
+        "status": "unread",
+        "url": "https://www.hsph.harvard.edu/fi..."
+      }
+    ],
+    "level_2_methods": [
+      {
+        "id": "04-hernan-2020",
+        "title": "What If: Causal Inference",
+        "authors": ["Miguel Hernán", "James Robins"],
+        "year": 2020,
+        "publisher": "CRC Press",
+        "pages": 400,
+        "core_concept": "IPW, g-formula, g-estimation",
+        "reading_time_hours": 15,
+        "status": "unread"
+      },
+      {
+        "id": "05-imbens-2015",
+        "title": "Causal Inference",
+        "authors": ["Guido Imbens", "Donald Rubin"],
+        "year": 2015,
+        "publisher": "Cambridge",
+        "pages": 350,
+        "core_concept": "Potential outcomes, SUTVA",
+        "reading_time_hours": 12,
+        "status": "unread"
+      },
+      {
+        "id": "06-abadie-2010",
+        "title": "Econometrics of Matched Samples",
+        "authors": ["Alberto Abadie", "Marianne Bertrand"],
+        "year": 2010,
+        "publisher": "NBER Working Paper",
+        "pages": 200,
+        "core_concept": "Matching, weighting",
+        "reading_time_hours": 8,
+        "status": "unread"
+      }
+    ],
+    "level_3_advanced": [
+      {
+        "id": "07-vanderlaan-2011",
+        "title": "Targeted Learning",
+        "authors": ["Mark van der Laan", "Sherri Rose"],
+        "year": 2011,
+        "publisher": "Springer",
+        "pages": 350,
+        "core_concept": "TMLE, superlearner",
+        "reading_time_hours": 10,
+        "status": "unread"
+      },
+      {
+        "id": "08-vanderweele-2015",
+        "title": "Causal Mediation Analysis",
+        "authors": ["Tyler VanderWeele"],
+        "year": 2015,
+        "publisher": "Oxford",
+        "pages": 200,
+        "core_concept": "Direct/indirect effects",
+        "reading_time_hours": 8,
+        "status": "unread"
+      },
+      {
+        "id": "09-cinelli-2020",
+        "title": "Sensitivity Analysis",
+        "authors": ["Carlos Cinelli", "Andrew Hazlett"],
+        "year": 2020,
+        "publisher": "Journal of Causal Inference",
+        "pages": 150,
+        "core_concept": "Hidden bias, E-values",
+        "reading_time_hours": 6,
+        "status": "unread"
+      }
+    ]
+  },
+  "unit_economics": {
+    "level_1_fundamentals": [
+      {
+        "id": "01-saas-metrics",
+        "title": "The SaaS Metrics",
+        "authors": ["Kleiner Perkins"],
+        "year": 2018,
+        "publisher": "KPCB",
+        "pages": 30,
+        "core_concept": "LTV, CAC, payback period",
+        "reading_time_hours": 4,
+        "status": "unread",
+        "url": "https://www.kleinerperkins.com/..."
+      },
+      {
+        "id": "02-thiel-2014",
+        "title": "Zero to One",
+        "authors": ["Peter Thiel"],
+        "year": 2014,
+        "publisher": "Crown",
+        "pages": 224,
+        "core_concept": "Economics of scale",
+        "reading_time_hours": 6,
+        "status": "unread"
+      },
+      {
+        "id": "03-traction-2012",
+        "title": "Traction",
+        "authors": ["David Fried", "David Heinemeier"],
+        "year": 2012,
+        "publisher": "Traction Labs",
+        "pages": 250,
+        "core_concept": "19 channels",
+        "reading_time_hours": 5,
+        "status": "unread"
+      }
+    ],
+    "level_2_advanced": [
+      {
+        "id": "04-attribution-2020",
+        "title": "Marketing Metrics",
+        "authors": ["Gary Armstrong"],
+        "year": 2020,
+        "publisher": "Pearson",
+        "pages": 300,
+        "core_concept": "Attribution models",
+        "reading_time_hours": 8,
+        "status": "unread"
+      },
+      {
+        "id": "05-cbsc-2017",
+        "title": "Customer-Based Corporate Strategy",
+        "authors": ["Anand Kumar"],
+        "year": 2017,
+        "publisher": "CBSC Publishing",
+        "pages": 400,
+        "core_concept": "CBSC, LTV:CAC",
+        "reading_time_hours": 10,
+        "status": "unread"
+      },
+      {
+        "id": "06-platform-2016",
+        "title": "Platform Economics",
+        "authors": ["Geoffrey Parker", "Marshall Van Alstyne"],
+        "year": 2016,
+        "publisher": "Oxford",
+        "pages": 320,
+        "core_concept": "Network effects",
+        "reading_time_hours": 8,
+        "status": "unread"
+      }
+    ]
+  },
+  "algorithmic_interface": {
+    "level_1_foundations": [
+      {
+        "id": "01-transformer-2017",
+        "title": "Attention Is All You Need",
+        "authors": ["Ashish Vaswani et al."],
+        "year": 2017,
+        "publisher": "NeurIPS",
+        "pages": 15,
+        "core_concept": "Transformer architecture",
+        "reading_time_hours": 8,
+        "status": "unread",
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "id": "02-bert-2019",
+        "title": "BERT",
+        "authors": ["Jacob Devlin et al."],
+        "year": 2019,
+        "publisher": "NAACL",
+        "pages": 12,
+        "core_concept": "Pre-training + fine-tuning",
+        "reading_time_hours": 4,
+        "status": "unread"
+      },
+      {
+        "id": "03-sbert-2019",
+        "title": "Sentence Transformers",
+        "authors": ["Nils Reimers", "Iryna Gurevych"],
+        "year": 2019,
+        "publisher": "EMNLP",
+        "pages": 8,
+        "core_concept": "SBERT",
+        "reading_time_hours": 4,
+        "status": "unread"
+      }
+    ],
+    "level_2_retrieval": [
+      {
+        "id": "04-dpr-2020",
+        "title": "Dense Passage Retrieval",
+        "authors": ["Vladimir Karpukhin et al."],
+        "year": 2020,
+        "publisher": "ICLR",
+        "pages": 12,
+        "core_concept": "DPR",
+        "reading_time_hours": 6,
+        "status": "unread"
+      },
+      {
+        "id": "05-colbert-2020",
+        "title": "ColBERT",
+        "authors": ["Omar Khattab", "Matei Zaher"],
+        "year": 2020,
+        "publisher": "SIGIR",
+        "pages": 10,
+        "core_concept": "Late interaction",
+        "reading_time_hours": 6,
+        "status": "unread"
+      },
+      {
+        "id": "06-ance-2021",
+        "title": "ANCE",
+        "authors": ["Lee Xiong et al."],
+        "year": 2021,
+        "publisher": "SIGIR",
+        "pages": 10,
+        "core_concept": "Approximate nearest neighbor",
+        "reading_time_hours": 6,
+        "status": "unread"
+      }
+    ],
+    "level_3_evaluation": [
+      {
+        "id": "07-beir-2021",
+        "title": "BEIR",
+        "authors": ["Nandan Thakur et al."],
+        "year": 2021,
+        "publisher": "arXiv",
+        "pages": 8,
+        "core_concept": "Retrieval benchmarks",
+        "reading_time_hours": 4,
+        "status": "unread"
+      },
+      {
+        "id": "08-mteb-2022",
+        "title": "MTEB",
+        "authors": ["Nils Muennighoff et al."],
+        "year": 2022,
+        "publisher": "arXiv",
+        "pages": 8,
+        "core_concept": "Embedding benchmarks",
+        "reading_time_hours": 4,
+        "status": "unread"
+      }
+    ]
+  }
+}
