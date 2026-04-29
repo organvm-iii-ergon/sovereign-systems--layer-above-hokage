@@ -110,3 +110,24 @@ mirrors, and auto-capture substrates from drifting into local-only state.
    filenames and leaving intentional archived material alone.
 3. Write a short checkpoint note for any WIP that should not yet be committed.
 4. Run targeted validation only where source files are staged for commit.
+
+## Linked Artifacts (downstream)
+
+Plans operationalized under this routing — append as new ones land.
+
+- **2026-04-29 — Maddie ideals-vs-rendered diff tracker.** Crosswalks the
+  W-001..W-065 atomized-wants inventory and the I-NN V4 design directives
+  against the current rendered state of the Maddie spiral. Identifies 8
+  PARTIAL, 5 MISSING, 9 BLOCKED, 7 DRIFT items including the EnvVar
+  substrate (D-001) and pillar-mapping discrepancy between the locked
+  architecture and `hub.config.ts` (D-005). Refresh discipline: manual,
+  on-demand. No automation.
+  - Canonical: `organvm/sovereign-systems--elevate-align/.claude/plans/2026-04-29-maddie-ideals-vs-rendered-diff.md` (commit `baa24f6`)
+  - Chezmoi mirror: `domus-semper-palingenesis/private_dot_claude/plans/2026-04-29-maddie-ideals-vs-rendered-diff.md` (commit `9c45e10`)
+- **2026-04-29 — Antigravity voice-assistant repair plan.** Diagnosis-only
+  plan. Stream A of conductor session. Lane (b) recommended: install a
+  macOS-native recognizer (Whisper.cpp + ~80-line Node bridge) that
+  speaks the b4rtaz extension's WS protocol on `localhost:9999`. The
+  b4rtaz client is structurally sound — only the recognizer back-end is
+  missing for macOS. Foreground process only, no LaunchAgent.
+  - Local: `~/.claude/plans/2026-04-29-antigravity-voice-assistant-repair.md`
